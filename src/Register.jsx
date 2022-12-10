@@ -71,7 +71,7 @@ export const Register = () => {
             setPasswordValidationError('');
             setRegisterButtonVisibility(true);
         } else {
-            setPasswordValidationError('Password must be at least 9 characters.');
+            setPasswordValidationError('Password must be at least 9 characters and contains only alphanumeric characters without diacritical marks.');
             setRegisterButtonVisibility(false);
         }
     }
